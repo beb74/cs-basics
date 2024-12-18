@@ -89,6 +89,35 @@
             //}
 
             #endregion
+            #region Q18
+            Console.WriteLine("Enter The Hours");
+            float hour = float.Parse(Console.ReadLine());
+            if (hour >= 2 && hour <= 3)
+            {
+                Console.WriteLine("A worker's highly efficient");
+            }
+            else if (hour >= 2 && hour <= 3)
+            {
+                Console.WriteLine("A worker's highly efficient");
+            }
+            else if (hour >= 3 && hour <= 4)
+            {
+                Console.WriteLine("A worker's instructed to increase their speed.");
+            }
+            else if (hour >= 4 && hour <= 5)
+            {
+                Console.WriteLine("A worker's provided with training to enhance their speed.");
+            }
+            else if (hour > 5)
+            {
+                Console.WriteLine("A worker's leave the company. ");
+            }
+            else
+            {
+                Console.WriteLine("put the correct hour again");
+            }
+            #endregion
+
         }
 
 
