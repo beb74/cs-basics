@@ -26,34 +26,45 @@ class Program
         //Console.WriteLine($"The reversed number is {convert}");
         #endregion
         #region Q15
-        Console.Write("Start: ");
-        int start = int.Parse(Console.ReadLine());
-        Console.Write("End: ");
-        int end = int.Parse(Console.ReadLine());
+        //Console.Write("Start: ");
+        //int start = int.Parse(Console.ReadLine());
+        //Console.Write("End: ");
+        //int end = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Prime numbers:");
+        //Console.WriteLine("Prime numbers:");
 
-        for (int number = start; number <= end; number++)
+        //for (int number = start; number <= end; number++)
+        //{
+        //    if (number < 2) continue;
+
+        //    bool prime = true;
+        //    for (int i = 2; i < number; i++)
+        //    {
+        //        if (number % i == 0)
+        //        {
+        //            prime = false;
+        //            break;
+        //        }
+        //    }
+
+        //    if (prime)
+        //    {
+        //        Console.Write(number + " ");
+        //    }
+        //}
+
+
+        #endregion
+        #region Q16
+        Console.WriteLine("Enter the number");
+        int number = int.Parse(Console.ReadLine());
+        string boolean = " ";
+        while (number > 0)
         {
-            if (number < 2) continue;
-
-            bool prime = true;
-            for (int i = 2; i < number; i++)
-            {
-                if (number % i == 0)
-                {
-                    prime = false;
-                    break;
-                }
-            }
-
-            if (prime)
-            {
-                Console.Write(number + " ");
-            }
+            boolean = (number % 2) + boolean;
+            number = number / 2;
         }
-
-
+        Console.WriteLine(boolean);
         #endregion
     }
 
